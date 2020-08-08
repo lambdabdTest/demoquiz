@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/quizLayout"
+    android:layout_width="340dp"
+    android:layout_height="490dp"
+    android:background="#B3E6D6">
+
+    <Button
+        android:id="@+id/closePopupBtn"
+        android:layout_width="154dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="35dp"
+        android:background="#ECFFCC"
+        android:gravity="center"
+        android:shadowColor="#5E1313"
+        android:text="Close"
+        android:textSize="17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="331dp"
+        android:layout_height="67dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/aRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ক"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/aText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:hint="OPTION A"
+            android:text="লোড হচ্ছে"
+            android:textAlignment="center"
+            android:textSize="20dip" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="331dp"
+        android:layout_height="67dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/bRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="খ"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/bText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:hint="OPTION A"
+            android:text="লোড হচ্ছে"
+            android:textAlignment="center"
+            android:textSize="20dip" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="331dp"
+        android:layout_height="67dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/cRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="গ"
+            android:textSize="20dip" />
+
+        <TextView
+            android:id="@+id/cText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20sp"
+            android:hint="OPTION A"
+            android:text="লোড হচ্ছে"
+            android:textAlignment="center"
+            android:textSize="20dip" />
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="329dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="364dp"
+        android:gravity="center"
+        android:text="কুইজ টি লোড হচ্ছে অপেক্ষা করুন"
+        android:textColor="#0C0C0C"
+        android:textFontWeight="@android:integer/config_longAnimTime"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Quiz Loading" />
+</androidx.constraintlayout.widget.ConstraintLayout>
